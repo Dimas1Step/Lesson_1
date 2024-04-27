@@ -61,7 +61,7 @@ class Human:
         if self.car.drive():
             pass
         else:
-            if self.cat.fuel < 20:
+            if self.car.fuel < 20:
                 self.shopping('fuel')
             else:
                 self.repair()
@@ -88,19 +88,19 @@ class Human:
 
     def is_alive(self):
         if self.gladess < 0:
-            print('depression')
+            print('depression..')
             return False
         if self.satiety < 0:
             print('Dead')
         if self.money < -500:
-            print('Bankrut')
+            print('Bankrut..')
             return False
 
     def days_index(self):
         pass
 
-    def live(self):
-        pass
+    def live(self, day):
+        day = f'Day {day} of {self.name} life'
 
 class Home:
     def __init__(self):
