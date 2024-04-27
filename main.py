@@ -62,7 +62,7 @@ class  Student:
         print(f'Progress = {round(self.progress, 2)}')
 
     def live(self, day):
-        day = f'Day {day} of {self.name} life'
+        day = f'Day {day} of {self.name} life'  
         print(f'{day:=^50}')
         cube = random.randint(1, 3)
         if cube == 1:
