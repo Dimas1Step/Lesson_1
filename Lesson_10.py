@@ -4,9 +4,9 @@ connection = sqlite3.connect('my_db.db', 5)
 cursor = connection.cursor()
 print(connection)
 
-cursor.execute(
-    'create table first_table (name TEXT);'
-)
+# cursor.execute(
+#     'create table first_table (name TEXT);'
+# )
 cursor.execute(
     'insert into first_table (name) values ("Nick")'
 )
@@ -58,10 +58,10 @@ connection.commit()
 result = cursor.fetchall()
 print(result)
 
-cursor.execute(
-    'dro table first_table'
-)
-connection.commit()
+# cursor.execute(
+#     'dro table first_table'
+# )
+# connection.commit()
 
 # # print(connection)
 # # print(cursor)
